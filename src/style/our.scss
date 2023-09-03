@@ -1,0 +1,69 @@
+.zag{
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #11173f;
+    &__text{
+        
+        font-weight: 500;
+        font-size: 55px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        line-height: 69px;
+        margin-bottom: 20px;
+        margin-top: 147px;
+        &_dogs{
+            color: #ED705B;
+            font-weight: 700;
+        }
+    }
+    &__dogs{
+        // justify-content: space-between;
+        width: 1160px;
+        display: flex;
+        margin-top: 100px;
+    
+        flex-direction: row;
+        gap: 29px;
+        flex-wrap: wrap;
+        &_card{
+            width: 360px;
+            &-line{
+                margin-top: 16px;
+                margin-bottom: 30px;
+                display: flex;
+                justify-content: space-between;
+                &--text{
+                    font-weight: 700;
+                    font-size: 25px;
+                    line-height: 31px;
+                    text-transform: uppercase;
+                    color: white;
+                }
+                &--age{
+                    padding: 5px 15px;
+                    height: 28px;
+                    background: rgba(237, 112, 91, 0.33);
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    border-radius: 25px;
+                    display: flex;
+                    justify-content: center;
+                    
+                    &-text{
+                        color: #ED705C;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 1.2em;
+                        text-transform: uppercase;
+                        letter-spacing: 0.2em;
+                    }
+                }
+            }
+
+        }
+
+    }
+    
+}

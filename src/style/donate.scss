@@ -1,0 +1,158 @@
+.touch-zag{
+    margin-top: 147px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    &__text{
+        color: #FFF;
+        text-align: center;
+        font-family: Quicksand;
+        font-size: 55px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        &_dop{
+            color:  #ED705B;
+            font-family: Quicksand;
+            font-size: 55px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+
+}
+.donate-imputs{
+    width: 100vw;
+    background-color: #272D50;
+    height: 1216px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    &__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        &_pole{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            width: 509px;
+            height: 763px;
+            margin-left: 54px;
+            margin-top: 68px;
+            &-plachka{
+                width: 86px;
+                height: 31px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 30px;
+                border: 1px solid #ED705B;
+                background: rgba(237, 112, 91, 0.33);
+                &-text{
+                    color: #FFF;
+                    text-align: center;
+                    font-family: Quicksand;
+                    font-size: 12px;
+                    font-weight: 600;
+                    letter-spacing: 0.07px;
+                    text-transform: uppercase;
+                }
+            }
+            &-get{
+                margin-top: 20px;
+                color: #FFF;
+                text-align: center;
+                font-family: Quicksand;
+                font-size: 35px;
+                font-weight: 700;
+            }
+            &-inputs{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                margin-top: 45px;
+                &-input{
+                    width: 509px;
+                    height: 45px;
+                    align-items: flex-start;
+                    gap: 8px;
+                    border-radius: 50px;
+                    border: 1px solid rgba(220, 204, 187, 0.33);
+                    padding: 15px 211px 15px 15px;
+                    background-color: #272D50;
+                    margin-bottom: 20px;
+                
+                }
+                &-massage{
+                    background-color: #272D50;
+                    width: 509px;
+                    padding: 10px 211px 120px 15px;
+                    align-items: flex-start;
+                    gap: 8px;
+                    height: 145px;
+                    border-radius: 20px;
+                    border: 1px solid rgba(220, 204, 187, 0.33);
+                }
+
+            }
+            &-button-submit{
+                padding: 15px 25px;
+                border-radius: 50px;
+                border: 1px solid  #DCCCBB;
+                background-color: #272D50;
+                margin-top: 45px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 8px;
+                align-self: stretch;
+                font-family: Quicksand;
+                color: #DCCCBB;
+                font-size: 12px;
+                font-weight: 600;
+                line-height: 180%; /* 21.6px */
+                letter-spacing: 1.2px;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+}
+input::placeholder {
+    color: #DCCCBB54 ;
+    font-size: 1.2em;
+    font-style: italic;
+}
+textarea::placeholder {
+    color: #DCCCBB54 ;
+    font-size: 1.2em;
+    font-style: italic;
+}
+textarea {
+    resize : none;
+    overflow : hidden;
+    outline : none;
+}
+// button:before {
+// 	content:'';
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	width: 0;
+// 	height: 42px;
+// 	background: rgba(255,255,255,0.3);
+// 	border-radius: 5px;
+// 	transition: all 2s ease;
+// }
+// button:hover:before {
+// 	width: 100%;
+// }

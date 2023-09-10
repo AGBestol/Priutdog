@@ -41,6 +41,7 @@ export default {
 @import '@/style/blog.scss';
 @import '@/style/help.scss';
 @import '@/style/selection.scss';
+@import '@/style/donate.scss';
 
 @font-face {
     font-family: "Quicksand";

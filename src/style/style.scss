@@ -134,6 +134,7 @@ body{
         font-weight: 500;
         font-size: 75px;
         line-height: 110%;
+        text-align: left;
         &:first-child{
             color: #ED705C;
         }
@@ -497,7 +498,7 @@ body{
     width: 1160px;
     height: 710px;
     margin-top: 77px;
-    // margin-left: 140px;
+    margin-bottom: 149px;
     font-family: 'Quicksand';
     &__zag_blog{
         width: 76px;
@@ -676,4 +677,23 @@ body{
             }
         }
     }
+}
+@media screen and (max-width: 1530px) {
+    .afisha{
+        margin-left: 30px;
+        &__name{
+            font-size: 55px;
+        }
+        &__lorem{
+            font-size: 13px;
+            line-height: 181%;
+        }
+    }
+    .header{
+        width: 95vw;
+        &__logo{
+            width: 110px;
+        }
+    }
+
 }

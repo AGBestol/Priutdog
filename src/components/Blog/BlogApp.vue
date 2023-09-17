@@ -49,7 +49,7 @@ export default {
                 },
                 {
                     color: '#8C97CA',
-                    plashkaText: 'Adopt111',
+                    plashkaText: 'Adopt',
                     date: 'March 19, 2022',
                     title: 'All the things to consider when choosing child friendly pets',
                     text: 'Lorem ipsum dolor sit amet consectetur. Sit ac nisi imperdiet ut. Sed nunc placerat nunc eu fusce volutpat tincidunt adipiscing non.',
@@ -57,7 +57,7 @@ export default {
                 },
                 {
                     color: '#DCCCBB',
-                    plashkaText: 'Adopt111',
+                    plashkaText: 'Adopt',
                     date: 'March 19, 2022',
                     title: '12 reason to adopt, don’t shop!',
                     text: 'Lorem ipsum dolor sit amet consectetur. Sit ac nisi imperdiet ut. Sed nunc placerat nunc eu fusce volutpat tincidunt adipiscing non.',

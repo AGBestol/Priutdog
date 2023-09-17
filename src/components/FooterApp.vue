@@ -2,7 +2,7 @@
     <div class="footer">
         <div class="footer__columns">
             <div class="footer__columns_one">
-                <img src="@/assets/footer/logo.svg">
+                <img class="footer__columns_one-adaptiv" src="@/assets/footer/logo.svg">
                 <p>Sample street 10,<br>
                     Sample city 0000, Austria
                 </p>

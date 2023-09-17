@@ -37,31 +37,11 @@
         </div>
     </div>
     <div class="card">
-            <div class="card__card1">
-                <div class="card__card1__sizecontent1">
-
-                    <div class="card__card1__sizecontent1_text1">
-                        <p class="card__card1__sizecontent1_text1-1">I’d like to</p>
-                        <p class="card__card1__sizecontent1_text1-2">adobt a dog.</p>
-                    </div>    
-                    <div class="card__card1__sizecontent1_text2">
-                        <p>Lorem ipsum dolor sit amet consectetur.</p> 
-                        <p class="card__card1__sizecontent1_text2-1">Sed amet egestas pellentesque</p>
-                        <p class="card__card1__sizecontent1_text2-2">suspendisse feugiat.</p>
-                    </div>
-                    <p class="card__card1__sizecontent1_text3">view more</p>
-
-                </div>
-            </div>
-            <div class="card__card2">
-                <p class="card__card2_text1">I’m interested in <br> volunteering.</p>
-                <p class="card__card2_text2">Lorem ipsum dolor sit amet consectetur. <br> Sed amet egestas pellentesque <br> suspendisse feugiat.</p>
-                <p class="card__card2_text3">view more</p>
-            </div>
-            <div class="card__card3">
-                <p class="card__card3_text1">I’d like to make a <br> donation.</p>
-                <p class="card__card3_text2">Lorem ipsum dolor sit amet consectetur. <br> Sed amet egestas pellentesque <br> suspendisse feugiat.</p>
-                <p class="card__card3_text3">view more</p>
+            <div v-for="card in cards"  class="card__card">
+                <p class="card__card_zag" v-html="card.zag"></p>
+                <p class="card__card_lorem">Lorem ipsum dolor sit amet consectetur. <br> Sed amet egestas pellentesque <br> suspendisse feugiat.</p>
+                <p class="card__card_link">view more</p>
+                    
             </div>
     </div>
     <div class="paw_alert">
@@ -152,50 +132,70 @@
         <div class="blog__zag_blog">
             <p class="blog__zag_blog_blog">Blog</p>
         </div>
-        <p class="blog__latest">Latest <span class="blog__latest_posts">blog posts</span></p>
+        <div class="blog__rasp">
+
+            <p class="blog__rasp_latest">Latest <span class="blog_latest-posts">blog posts</span></p>
+        </div>
         <div class="blog__cards">
-            <div class="blog__cards_card">
-                <img src="@/assets/blog/blog-thumbnail.png">
-                <div class="blog__cards_card-row">
-                    <div class="blog__cards_card-row--plashka">
-                        <p>Blog post</p>
+            <div v-for="blog in blogs" class="blog__cards_card">
+                <img class="blog__cards_card-img" :src="blog.img">
+                <div class="blog__cards_card-adaptiv">
+                    
+                    <div class="blog__cards_card-adaptiv-row">
+                        <div class="blog__cards_card-adaptiv-row--plashka">
+                            <p>Blog post</p>
+                        </div>
+                        <p class="blog__cards_card-adaptiv-row--date">{{ blog.date }}</p>
                     </div>
-                    <p class="blog__cards_card-row--date">Februar 3, 2022</p>
-                </div>
-                <p class="blog__cards_card-text">Starting your new Friendship <br>
-                    off on the right paw</p>
-                <div class="blog__cards_card-button">
-                    <p>Read more</p>
-                </div>
-            </div>
-            <div class="blog__cards_card">
-                <img src="@/assets/blog/2.png">
-                <div class="blog__cards_card-row">
-                    <div class="blog__cards_card-row--plashka">
-                        <p>Blog post</p>
+                    <p class="blog__cards_card-adaptiv-text" v-html="blog.lorem"></p>
+                    <div class="blog__cards_card-adaptiv-button">
+                        <p>Read more</p>
                     </div>
-                    <p class="blog__cards_card-row--date">March 20, 2022</p>
-                </div>
-                <p class="blog__cards_card-text">Starting your new Friendship <br>
-                    off on the right paw</p>
-                <div class="blog__cards_card-button">
-                    <p>Read more</p>
-                </div>
-            </div>
-            <div class="blog__cards_card">
-                <img src="@/assets/blog/3.png">
-                <div class="blog__cards_card-row">
-                    <div class="blog__cards_card-row--plashka">
-                        <p>Blog post</p>
-                    </div>
-                    <p class="blog__cards_card-row--date">March 20, 2022</p>
-                </div>
-                <p class="blog__cards_card-text">12 reason to adopt, don’t <br>
-                    shop!</p>
-                <div class="blog__cards_card-button">
-                    <p>Read more</p>
                 </div>
             </div>
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            cards:[
+                {
+                    zag:'I’d like to <br> adobt a dog.',
+      
+
+                },
+                {
+                    zag:'I’m interested in <br> volunteering.',
+    
+
+                },
+                {
+                    zag:'I’d like to <br> adobt a dog.',
+                
+
+                },
+            ],
+            blogs:[
+                {
+                    img: require('@/assets/blog/blog-thumbnail.png'),
+                    date:'Februar 3, 2022',
+                    lorem:'Starting your new Friendship <br> off on the right paw',
+                },
+                {
+                    img: require('@/assets/blog/2.png'),
+                    date:'March 20, 2022',
+                    lorem:'Starting your new Friendship <br> off on the right paw',
+                },
+                {
+                    img: require('@/assets/blog/3.png'),
+                    date:'March 20, 2022',
+                    lorem:'12 reason to adopt, don’t <br> shop!',
+                },
+            ],
+        }
+    },
+}
+</script>

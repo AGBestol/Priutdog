@@ -173,7 +173,7 @@ export default {
 
                 },
                 {
-                    zag:'I’d like to <br> adobt a dog.',
+                    zag:'I’d like to make a donation.',
                 
 
                 },

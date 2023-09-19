@@ -283,3 +283,63 @@
         text-transform: uppercase;
     }
 }
+@media screen and (max-width: 1200px) {
+    .content-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        &__info{
+            margin-left: 0px;
+            margin-top: 33px;
+        }
+    }
+    .volunteer-cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__card{
+            width: 400px;
+            margin-bottom: 20px;
+            margin-top: 70px;
+            margin-right: 0px;
+            &_circle{
+                left: 156px;
+            }
+
+        }
+    }
+    .content-2{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+        &__info{
+            margin-right: 0px;
+            margin-top: 33px;
+        }
+    }
+    .carer-cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__card{
+            width: 400px;
+            margin-bottom: 20px;
+            margin-top: 70px;
+            margin-right: 0px;
+            &_circle{
+                left: 156px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    
+}

@@ -333,6 +333,10 @@ body{
             display: flex;
             flex-direction: column;
             margin-right: 26px; 
+            & >img{
+                width: 369;
+                height: 462px;
+            }
             
         }
         &_2{
@@ -349,6 +353,10 @@ body{
                 &--us{
                     color: #FFFFFF;
                 }
+            }
+            & >img{
+                width: 369;
+                height: 462px;
             }
         }
         &_3{
@@ -762,6 +770,9 @@ body{
     }
     .afisha{
         margin-left: none;
+        &__lorem{
+            font-size: 11px;
+        }
     }
     .footer__columns_one{
         font-size: 18px;
@@ -821,29 +832,81 @@ body{
         }
     }
     .animal{
-        height: 1050px;
+        height: 560px;
         &__column{
-            width: 400px;
-            &__column_1-1{
-                & >img{
-                    max-width: 0;
-                    width: 150px;
-                    height: 200px;
-
-                }
-                &_bottom{
-                    width: 150px;
-                    margin-bottom: 24px;
-                    &-text1{
-                        font-size: 16px;
-
-                    }
-                    &-text2{
-                        font-size: 9px;
-                        padding: 4px 12px;
-                    }
-                }
+            width: 310px;
+            &_1{
+                width: 100px;
+                margin-right: 16px;
+                
             }
+            
+            &_2{
+                margin-right: 16px;
+                width: 100px;
+                &-adopt_us{
+                    font-size: 19px;
+                    margin-bottom: 20px;
+                }
+                
+            }
+        }
+        & >img{
+            max-width: none;
+            width: 150px;
+            height: 200px;
+    
+        }
+        &__all_dogs_text{
+            margin-top: 20px;
+            font-size: 11px;
+        }
+    }
+    .animal__column_bottom{
+    width: 92px;
+    margin-bottom: 24px;
+    &-text1{
+        font-size: 9px;
+    
+    }
+    &-text2{
+        font-size: 5px;
+        padding: 4px 12px;
+    }
+    }
+    .paw_alert{
+        &__zag_paw_alert{
+            margin-top: 35px;
+        }
+        &__about_us{
+            height: 600px;
+            width: 355px;
+            &_name{
+                font-size: 35px;
+                margin-bottom: 20px;
+            }
+            &_lorem{
+                font-size: 13PX;
+                line-height: 29px;
+                width: 291px;
+                margin-bottom: 40px;
+            }
+            &_contact_us{
+                margin-bottom: 35px;
+            }
+        }
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 850px;
+        &__card{
+            width: 320px;
+            height: 220px;
+            margin-top: 25px;
+            margin-left: 0px;
         }
     }
 }

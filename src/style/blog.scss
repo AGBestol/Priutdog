@@ -31,12 +31,15 @@
     justify-content: flex-start;
     align-items: center;
     &__blog{
-        border-bottom: 2px solid #4E3A52 ;
+        border-bottom: 2px solid #4E3A52;
         height: 400px;
         width: 1159px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        &:last-child{
+            border-bottom: none;
+        }
         &_info{
             font-family: Quicksand;
             width: 592px;

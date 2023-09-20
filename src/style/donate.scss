@@ -71,6 +71,7 @@
                 font-family: Quicksand;
                 font-size: 35px;
                 font-weight: 700;
+
             }
             &-inputs{
                 display: flex;
@@ -88,6 +89,16 @@
                     padding: 15px 211px 15px 15px;
                     background-color: #272D50;
                     margin-bottom: 20px;
+                    font-size: 16px;
+                    color: white;
+                    &::placeholder {
+                        color: #DCCCBB54 ;
+                        font-size: 1.2em;
+                        font-style: italic;
+                    }
+                    &:focus{
+                        border: 1px solid rgba(220, 204, 187, 0.33);
+                    }
                 }
                 &-massage{
                     background-color: #272D50;
@@ -126,11 +137,7 @@
     }
 
 }
-input::placeholder {
-    color: #DCCCBB54 ;
-    font-size: 1.2em;
-    font-style: italic;
-}
+
 textarea::placeholder {
     color: #DCCCBB54 ;
     font-size: 1.2em;

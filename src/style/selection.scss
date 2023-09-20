@@ -161,3 +161,15 @@
         }
     }
 }
+@media screen and (max-width:1200px) {
+    .publications{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__card{
+            margin-right: 0px;
+            margin-bottom: 40px;
+        }
+    }
+}

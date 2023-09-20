@@ -115,4 +115,47 @@
 
     
 }
+@media screen and (max-width: 1200px) {
+    .blogs{
+        &__blog{
+            height: 500px;
+            width: 750px;
+            &_info{
+                height: 400px;
+                &-title{
+                    font-size: 22px;
+                }
+                &-text{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .blogs{
+        height: 2000px;
+        &__blog{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 600px;
+            width: 500px;
+            & >img{
+                max-width: 67%;
+            }
+            &_info{
+                height: 256px;
+                width: 310px;
+                &-title{
+                    font-size: 22px;
+                }
+                &-text{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
    

@@ -40,6 +40,9 @@ body{
         font-weight: 600;
         font-size: 16px;
         margin-left: 30px;
+        :hover{
+            color: #ED705B;
+        }
         
         
     }
@@ -575,9 +578,15 @@ body{
             font-size: 23px;
             text-transform: uppercase;
             &-icons{
+                cursor: pointer;
+                &:hover{
+                    background-color: #ED705B;
+                    border-radius: 50%;
+                }
                 display: flex;
                 flex-direction: row;
                 & > img{
+                    
                     margin-right: 30px;
                     margin-top: 50px;
                 }
@@ -660,10 +669,13 @@ body{
     }
     .card{
         &__card{
-            width: 220px;
+            width: 250px;
             &_zag{
                 font-size: 25px;
                 line-height: 35px;
+            }
+            &:first-child{
+                margin-left: 0px;
             }
         }
     }
@@ -679,7 +691,7 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 900px;
+        height: auto;
         &__cards{
             display: flex;
             flex-direction: column;
@@ -690,12 +702,14 @@ body{
                 flex-direction: row;
                 justify-content: flex-start;
                 width: 700px;
-                height: 260px;
+                height: auto;
+                margin-top: 40px;
                 
                 &-img{
                     width: 300px;
-                    height: 200px;
+                    height: 300px;
                     margin-right: 30px;
+                    object-fit: contain;
                 }
             }
         }
@@ -806,7 +820,7 @@ body{
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        height: 1490px;
+        height: auto;
         &__rasp_latest{
             font-size: 35px;
 
@@ -818,15 +832,20 @@ body{
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                height: 500px;
+                height: auto;
+                margin-top: 45px;
                 & >img{
                     margin-top: 0px;
                     margin-right: 0px;
                     width: 400px;
-                    height: 250px;
+                    height: 310px;
+                    object-fit: contain;
                 }
                 &-adaptiv{
-                    width: 360px;
+                    width: 335px;
+                    &-text{
+                        font-size: 20px;
+                    }
                 }
             }
         }
@@ -903,7 +922,7 @@ body{
         align-items: center;
         height: 850px;
         &__card{
-            width: 320px;
+            width: 350px;
             height: 220px;
             margin-top: 25px;
             margin-left: 0px;

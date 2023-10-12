@@ -173,3 +173,38 @@
         }
     }
 }
+@media screen and (max-width:800px) {
+    .choice__dot{
+        margin-bottom: 60px;
+    }
+    .choice__text{
+        font-size: 23px;
+    }
+    .parting-word{
+        width: 90vw;
+        &__text{
+            margin-top: 20px;
+            &_title{
+                font-size: 28px;
+            }
+            &_content{
+                font-size: 12px;
+            }
+        }
+    }
+    .related{
+        margin-top: 90px;
+        
+    }
+    .publications{
+        &__card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &>img{
+                width: 90vw;
+            }
+        }
+    }
+}

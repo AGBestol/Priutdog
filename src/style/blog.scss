@@ -30,9 +30,10 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    height: auto;
     &__blog{
         border-bottom: 2px solid #4E3A52;
-        height: 400px;
+        height: auto;
         width: 1159px;
         display: flex;
         justify-content: space-between;
@@ -121,10 +122,11 @@
 @media screen and (max-width: 1200px) {
     .blogs{
         &__blog{
-            height: 500px;
+            height: auto;
             width: 750px;
             &_info{
-                height: 400px;
+                margin-right: 30px;
+                height: auto;
                 &-title{
                     font-size: 22px;
                 }
@@ -137,20 +139,23 @@
 }
 @media screen and (max-width: 800px) {
     .blogs{
-        height: 2000px;
+        height: auto;
         &__blog{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 600px;
+            height: auto;
             width: 500px;
             & >img{
                 max-width: 67%;
             }
             &_info{
-                height: 256px;
+                margin-right: 0px;
+                height: auto;
                 width: 310px;
+                margin-top: 30px;
+                margin-bottom: 30px;
                 &-title{
                     font-size: 22px;
                 }
